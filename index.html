@@ -1,0 +1,39 @@
+<html ng-app="phonecatApp">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+
+Search by symbol: <input type="text" ng-model="search.symbol">
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Stock Symbol</th>
+    <th>Open</th>
+    <th>Close</th>
+    <th>High</th>
+    <th>Low</th>
+    <th>Volume</th>
+
+  </tr>
+  <tr ng-repeat="data in databaseresponse |filter:search">
+
+    <td>{{data.date}}</td>
+    <td>{{data.symbol}}</td>
+    <td>{{data.open}}</td>
+    <td>{{data.close}}</td>
+    <td>{{data.hi}}</td>
+    <td>{{data.lo}}</td>
+    <td>{{data.vl}}</td>
+
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
