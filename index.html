@@ -5,13 +5,25 @@
 </head>
 <body ng-controller="StockDataController">
 
+<h1>{{dataBindingExample}}</h1>
+
+<input type="text"
+       ng-model="inputText"
+       placeholder="Two way binding example"/>
+<h1>{{inputText}}</h1>
+
+<h1 ng-if="isTodayTuesday">It is Tuesday!</h1>
+
+<div>
+  <button ng-click="toggleBoolean()">Change Tuesday Boolean</button>
+</div>
+
 <div>
   <button ng-click="getStockData()">Get Stock Information!</button>
 </div>
 Search by symbol: <input type="text" ng-model="search.symbol">
 
-
-<table>
+<table ng-if="isTodayTuesday">
   <tr>
     <th>Date</th>
     <th>Stock Symbol</th>
