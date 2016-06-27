@@ -24,9 +24,4 @@ lunchAndLearnExample.controller('StockDataController', function ($scope,$http) {
     $scope.isTodayTuesday= true;
   }
 
-
-
-
-
-
 });
