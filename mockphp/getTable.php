@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tristanwellz
- * Date: 6/21/16
- * Time: 8:41 PM
- */
-
 //Let's pretend this is a backend php service call.
+//Select * from stock_end_of_day_data where date = '05-05-2016' and stock_index='NASDAQ';
 
 $path = 'NASDAQ_20160505.csv';
 if (($handle = @fopen($path, "r")) !== FALSE) {
