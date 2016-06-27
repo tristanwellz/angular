@@ -1,9 +1,9 @@
 /**
  * Created by tristanwellz on 6/20/16.
  */
-var phonecatApp = angular.module('phonecatApp', []);
+var lunchAndLearnExample = angular.module('lunchAndLearnExample', []);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope,$http) {
+lunchAndLearnExample.controller('StockDataController', function ($scope,$http) {
 
   $http.get("mockphp/getTable.php").then(function(response){
     $scope.databaseresponse=response.data;

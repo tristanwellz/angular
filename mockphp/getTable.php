@@ -6,9 +6,7 @@
  * Time: 8:41 PM
  */
 
-//Connect to database
-//Get table
-//Json format return
+//Let's pretend this is a backend php service call.
 
 $path = 'NASDAQ_20160505.csv';
 if (($handle = @fopen($path, "r")) !== FALSE) {
