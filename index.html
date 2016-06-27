@@ -18,34 +18,6 @@
   <button ng-click="toggleBoolean()">Change Tuesday Boolean</button>
 </div>
 
-<div>
-  <button ng-click="getStockData()">Get Stock Information!</button>
-</div>
-Search by symbol: <input type="text" ng-model="search.symbol">
-
-<table ng-if="isTodayTuesday">
-  <tr>
-    <th>Date</th>
-    <th>Stock Symbol</th>
-    <th>Open</th>
-    <th>Close</th>
-    <th>High</th>
-    <th>Low</th>
-    <th>Volume</th>
-
-  </tr>
-  <tr ng-repeat="data in databaseresponse |filter:search|orderBy:'vl'">
-
-    <td>{{data.date}}</td>
-    <td>{{data.symbol}}</td>
-    <td>{{data.open}}</td>
-    <td>{{data.close}}</td>
-    <td>{{data.hi}}</td>
-    <td>{{data.lo}}</td>
-    <td>{{data.vl}}</td>
-
-  </tr>
-</table>
 
 </body>
 </html>
