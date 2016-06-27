@@ -34,7 +34,7 @@ Search by symbol: <input type="text" ng-model="search.symbol">
     <th>Volume</th>
 
   </tr>
-  <tr ng-repeat="data in databaseresponse |filter:search|orderBy:'vl'">
+  <tr ng-repeat="data in databaseresponse |filter:search|orderBy:'open'">
 
     <td>{{data.date}}</td>
     <td>{{data.symbol}}</td>
