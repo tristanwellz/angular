@@ -3,49 +3,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="StockDataController">
+<body >
+<h1> Your web server is functional!</h1>
 
-<h1>{{dataBindingExample}}</h1>
-
-<input type="text"
-       ng-model="inputText"
-       placeholder="Two way binding example"/>
-<h1>{{inputText}}</h1>
-
-<h1 ng-if="isTodayTuesday">It is Tuesday!</h1>
-
-<div>
-  <button ng-click="toggleBoolean()">Change Tuesday Boolean</button>
-</div>
-
-<div>
-  <button ng-click="getStockData()">Get Stock Information!</button>
-</div>
-Search by symbol: <input type="text" ng-model="search.symbol">
-
-<table ng-if="isTodayTuesday">
-  <tr>
-    <th>Date</th>
-    <th>Stock Symbol</th>
-    <th>Open</th>
-    <th>Close</th>
-    <th>High</th>
-    <th>Low</th>
-    <th>Volume</th>
-
-  </tr>
-  <tr ng-repeat="data in databaseresponse |filter:search|orderBy:'vl'">
-
-    <td>{{data.date}}</td>
-    <td>{{data.symbol}}</td>
-    <td>{{data.open}}</td>
-    <td>{{data.close}}</td>
-    <td>{{data.hi}}</td>
-    <td>{{data.lo}}</td>
-    <td>{{data.vl}}</td>
-
-  </tr>
-</table>
 
 </body>
 </html>
