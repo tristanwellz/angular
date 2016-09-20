@@ -3,7 +3,6 @@
  */
 angular.module('lunchAndLearnExample')
     .directive('lunchAndLearnDirective',function(){
-
       function link($scope){
         //Add functions here that will be used with the directive.
         $scope.onButtonCLick= function(){

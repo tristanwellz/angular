@@ -1,15 +1,17 @@
-<h2>{{strVariable}}</h2>
-<form ng-submit="onButtonCLick()">
-    <div class="name-input">
-        {{variable.inputname}}
-        <input ng-model="name" type="text" class="name">
-    </div>
-    <div class="pass-input">
-        {{variable.inputpass}}
-        <input ng-model="pass" type="password" class="pass">
-    </div>
+<div class="directiveTemplate" style="border:1px blue solid;padding:5px;margin-bottom:5px;">
+    <h2>{{strVariable}}</h2>
+    <form ng-submit="onButtonCLick()">
+        <div class="name-input">
+            {{variable.inputname}}
+            <input ng-model="name" type="text" class="name">
+        </div>
+        <div class="pass-input">
+            {{variable.inputpass}}
+            <input ng-model="pass" type="password" class="pass">
+        </div>
 
-    <div class="button">
-        <input type="submit" value="{{variable.inputButton}}">
-    </div>
-</form>
+        <div class="button">
+            <input type="submit" value="{{variable.inputButton}}">
+        </div>
+    </form>
+</div>
