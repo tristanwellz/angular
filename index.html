@@ -1,13 +1,17 @@
 <html ng-app="lunchAndLearnExample">
-<head>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="js/controllers.js"></script>
-</head>
-<body ng-controller="StockDataController">
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="directives/directiveone.js"></script>
+    </head>
 
-<h1>{{dataBindingExample}}</h1>
+    <body ng-controller="StockDataController">
+        <h1>{{dataBindingExample}}</h1>
+        <lunch-and-learn-directive info="inputs"
+                string="Login html built with a directive">
+        </lunch-and-learn-directive>
 
-</body>
+    </body>
 </html>
 
 
